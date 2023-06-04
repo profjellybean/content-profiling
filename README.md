@@ -6,7 +6,7 @@
 + Subject: Content profiling for a data repository
 + Year of creation: 2023
 + Author: Valentin Schnabl & Tuvshin Selenge
-+ ORCID: ... (Valentin Schnabl)
++ ORCID: https://orcid.org/0000-0001-6367-3403 (Valentin Schnabl)
 + ORCID: https://orcid.org/0009-0001-3293-2959 (Tuvshin Selenge)
 
 ---
