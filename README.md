@@ -69,4 +69,4 @@ In summary, this code sets up the execution environment for the FITS command-lin
 
 **Conclusion**
 
-# docker run -it -p **port**:9000 -v **dir**\output artourkin/c3po:latest
+# docker run -it -p **port**:9000 -v **dir**\output:/data/FITS artourkin/c3po:latest
