@@ -8,8 +8,9 @@ pathToFits = r"C:/Users/valen/Desktop/fits-1.5.1"
 
 dir = sys.argv[1]
 
-if (len(sys.argv) > 2):  # if more than one argument is given, print error message and exit
-    print("Too many arguments")
+# if more than one argument is given, print error message and exit
+if (len(sys.argv) > 2 or len(sys.argv) < 1):
+    print("Wrong number of arguments, please provide one argument: the directory to be processed")
     exit(1)
 
 try:
@@ -26,6 +27,6 @@ for entry in entries:
             zObject.extractall(dir)
 
 
-p = Popen("fits.bat -i " + dir + " -r  -o " + dir + "/output/",
+p = Popen("fits.bat -i " + dir + " -r -n  -o " + dir + "/output/",
           cwd=pathToFits, shell=True)  # run fits.bat with the given directory as input
 stdout, stderr = p.communicate()
