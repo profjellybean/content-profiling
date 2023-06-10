@@ -13,7 +13,7 @@
 **Overview**
 
 Operating a data repository comes with the crucial task of understanding its contents. In this project, we aim to utilize digital preservation tools for content profiling. 
-Our goal is to analyze and visualize the types of files within the repository, gaining valuable insights into their characteristics and formats. This information will guide us in making informed decisions regarding storage, preservation strategies, and data management practices, ensuring responsible repository operation.
+Our goal is to analyse and visualise the types of files within the repository, gaining valuable insights into their characteristics and formats. This information will guide us in making informed decisions regarding storage, preservation strategies, and data management practices, ensuring responsible repository operation.
 
 ---
 
@@ -28,7 +28,9 @@ Our goal is to analyze and visualize the types of files within the repository, g
 
 **Procedure**
 
-In this project, we leverage FITS (File Information Tool Set) for file format identification and validation, as well as C3PO for content profiling and conflict resolution. Through a Python script, we automate the analysis process. C3PO is deployed as a Docker image, allowing metadata analysis of digital collections. The analysis results are processed in a Jupyter notebook, generating visual outputs that provide insights into file types and quantities. Additionally, data samples are produced, and based on the interpretation of the results, decisions can be made regarding the need for digital preservation actions.
+In this project, we utilize FITS (File Information Tool Set) for file format identification and validation, as well as C3PO for content profiling and conflict resolution. The analysis process is automated using a Python script. C3PO is deployed as a Docker image, enabling metadata analysis of digital collections. To run the analysis, use the command docker run -it -p **port**:9000 -v **dir**/output:/data/FITS artourkin/c3po:latest.
+
+The analysis results are processed in PowerBI. PowerBI provides a platform for data visualization and exploration. Through visual outputs, we gain insights into file types and quantities. Additionally, based on the interpretation of the results, decisions can be made regarding the need for digital preservation actions.
 
 ---
 
@@ -36,10 +38,10 @@ In this project, we leverage FITS (File Information Tool Set) for file format id
 
 The code requires the following packages to be imported:
 
-sys: This package provides access to system-specific parameters and functions.
-os: This package provides a way to interact with the operating system, allowing file and directory operations.
-subprocess: This package allows the creation of new processes, enabling the execution of external commands or scripts.
-zipfile: This package provides tools for creating, reading, and extracting files from ZIP archives.
+- sys: This package provides access to system-specific parameters and functions.
+- os: This package provides a way to interact with the operating system, allowing file and directory operations.
+- subprocess: This package allows the creation of new processes, enabling the execution of external commands or scripts.
+- zipfile: This package provides tools for creating, reading, and extracting files from ZIP archives.
 
 These packages are part of the Python standard library, so no additional external dependencies or installations are required to execute the code.
 
@@ -65,8 +67,10 @@ In summary, this code automates the analysis of files within a data repository u
 ---
 **Brief analysis**
 
+In our PowerBI analysis, we filtered and cleaned data from C3PO. Unnecessary columns were removed to focus on relevant information. We created three visualizations: a table overview, showing important details; a visualization of mimetype frequency; and a visualization of file creation years. We found out that most commen mimetype were text/plain and image/png. Preservation plans should be considered for formats like JPG and PNG. Evaluation of preservation costs and benefits is crucial for future access and visualisation.
+
 ---
 
 **Conclusion**
 
-# docker run -it -p **port**:9000 -v **dir**\output:/data/FITS artourkin/c3po:latest
+In conclusion, our analysis in PowerBI provided valuable insights into the dataset obtained from C3PO. By filtering and cleaning the data, we obtained a clear view of important information. We created visualisations to explore file types, mimetypes, and creation years. Preservation plans should be considered for non-plain text formats. Careful evaluation of preservation costs and benefits is necessary for informed decision-making. Overall, this analysis enhances our understanding of the dataset and highlights the importance of preservation for long-term access and visualisation.
