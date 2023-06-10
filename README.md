@@ -64,6 +64,8 @@ In summary, this code automates the analysis of files within a data repository u
 ---
 **Overview of the data samples**
 
+Our dataset, derived from C3PO, underwent a transformation from a raw CSV file (651 KB) to a filtered XLSX file (93 KB). This conversion reduced the file size significantly while retaining only the relevant information for our analysis in PowerBI. The optimized dataset allows for efficient data exploration and informed decision-making.
+
 ---
 **Brief analysis**
 
