@@ -1,8 +1,5 @@
-
-# --> DOI missing
 # Content profiling
 
-+ Group 6
 + Subject: Content profiling for a data repository
 + Year of creation: 2023
 + Author: Valentin Schnabl & Tuvshin Selenge
@@ -28,7 +25,7 @@ Our goal is to analyse and visualise the types of files within the repository, g
 
 **Procedure**
 
-In this project, we utilize FITS (File Information Tool Set) for file format identification and validation, as well as C3PO for content profiling and conflict resolution. The analysis process is automated using a Python script. C3PO is deployed as a Docker image, enabling metadata analysis of digital collections. To run the analysis, use the command docker run -it -p **port**:9000 -v **dir**/output:/data/FITS artourkin/c3po:latest.
+In this project, we utilize FITS <sup>[1](#fits)</sup> (File Information Tool Set) for file format identification and validation, as well as C3PO <sup>[1](#c3po)</sup> for content profiling and conflict resolution. The analysis process is automated using a Python script. C3PO is deployed as a Docker image, enabling metadata analysis of digital collections. To run the analysis, use the command docker run -it -p **port**:9000 -v **dir**/output:/data/FITS artourkin/c3po:latest.
 
 The analysis results are processed in PowerBI. PowerBI provides a platform for data visualization and exploration. Through visual outputs, we gain insights into file types and quantities. Additionally, based on the interpretation of the results, decisions can be made regarding the need for digital preservation actions.
 
@@ -80,3 +77,6 @@ In our PowerBI analysis, we filtered and cleaned data from C3PO. Unnecessary col
 **Conclusion**
 
 To summarize our findings, our analysis in PowerBI provided valuable insights into the dataset obtained from C3PO. By filtering and cleaning the data, we obtained a clear view of important information. We created visualizations to explore file types, mimetypes, and creation years. Preservation plans should be considered for non-plain text formats. Careful evaluation of preservation costs and benefits is necessary for informed decision-making. Overall, this analysis enhances our understanding of the dataset and highlights the importance of preservation for long-term access and visualization.
+
+<a name="fits">1</a>: https://projects.iq.harvard.edu/fits/home
+<a name="c3po">1</a>: http://ifs.tuwien.ac.at/imp/c3po
