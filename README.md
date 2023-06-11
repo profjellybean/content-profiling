@@ -81,4 +81,4 @@ To summarize our findings, our analysis in PowerBI provided valuable insights in
 <a name="fits">1</a>: https://projects.iq.harvard.edu/fits/home
 <a name="c3po">2</a>: http://ifs.tuwien.ac.at/imp/c3po
 
-[![DOI](https://zenodo.org/badge/{647834329}.svg)](https://zenodo.org/badge/latestdoi/{647834329})
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8024551.svg)](https://doi.org/10.5281/zenodo.8024551)
