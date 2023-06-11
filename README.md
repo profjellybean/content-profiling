@@ -1,5 +1,8 @@
 # Content profiling
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8024551.svg)](https://doi.org/10.5281/zenodo.8024551)
+
+
 + Subject: Content profiling for a data repository
 + Year of creation: 2023
 + Author: Valentin Schnabl & Tuvshin Selenge
@@ -80,5 +83,3 @@ To summarize our findings, our analysis in PowerBI provided valuable insights in
 
 <a name="fits">1</a>: https://projects.iq.harvard.edu/fits/home
 <a name="c3po">2</a>: http://ifs.tuwien.ac.at/imp/c3po
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8024551.svg)](https://doi.org/10.5281/zenodo.8024551)
