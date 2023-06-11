@@ -25,7 +25,7 @@ Our goal is to analyse and visualise the types of files within the repository, g
 
 **Procedure**
 
-In this project, we utilize FITS <sup>[1](#fits)</sup> (File Information Tool Set) for file format identification and validation, as well as C3PO <sup>[2](#c3po)</sup> for content profiling and conflict resolution. The analysis process is automated using a Python script. C3PO is deployed as a Docker image, enabling metadata analysis of digital collections. To run the analysis, use the command docker run -it -p **port**:9000 -v **dir**/output:/data/FITS artourkin/c3po:latest.
+In this project, we utilize FITS <sup>[1](#fits)</sup> (File Information Tool Set) for file format identification and validation, as well as C3PO <sup>[2](#c3po)</sup> for content profiling and conflict resolution. The analysis process is automated using a Python script. C3PO is deployed as a Docker image, enabling metadata analysis of digital collections. To run the analysis, use the command `docker run -it -p **port**:9000 -v **dir**/output:/data/FITS artourkin/c3po:latest`.
 
 The analysis results are processed in PowerBI. PowerBI provides a platform for data visualization and exploration. Through visual outputs, we gain insights into file types and quantities. Additionally, based on the interpretation of the results, decisions can be made regarding the need for digital preservation actions.
 
@@ -44,17 +44,17 @@ These packages are part of the Python standard library, so no additional externa
 
 The script starts by setting the path to the FITS tool (fits.bat) in the pathToFits variable. Make sure to adjust this path to match the actual location of the FITS tool on your system.
 
-Next, the script retrieves the directory path from the command-line argument passed to the script (sys.argv[1]), which specifies the directory where the data repository is located. It ensures that only one command-line argument is provided; otherwise, it prints an error message and exits.
+Next, the script retrieves the directory path from the command-line argument passed to the script (`sys.argv[1]`), which specifies the directory where the data repository is located. It ensures that only one command-line argument is provided; otherwise, it prints an error message and exits.
 
 The script attempts to create an output directory named "output" inside the specified directory. If the directory already exists, it prints an error message.
 
-Then, it retrieves the list of files and directories within the specified directory using os.listdir(dir).
+Then, it retrieves the list of files and directories within the specified directory using `os.listdir(dir)`.
 
 The script iterates over the entries in the directory and checks if any of them have a ".zip" file extension. If a ZIP file is found, it extracts its contents into the specified directory using the ZipFile module.
 
 The code uses the subprocess.Popen function to execute the fits.bat command-line tool. It passes the appropriate arguments, including the input directory (dir) and the output directory (dir/output/). The cwd parameter is set to the pathToFits directory to ensure the correct execution context. The shell=True argument enables running the command as a shell command.
 
-The script captures the standard output and error from the executed process using p.communicate(), storing them in the stdout and stderr variables, respectively.
+The script captures the standard output and error from the executed process using `p.communicate()`, storing them in the stdout and stderr variables, respectively.
 
 In summary, this code automates the analysis of files within a data repository using the FITS command-line tool. It sets up the execution environment, extracts ZIP files if present, and runs the FITS tool on the specified directory, generating the output in the "output" directory. This script provides a convenient way to automate the analysis of file contents within a data repository using FITS.
 
